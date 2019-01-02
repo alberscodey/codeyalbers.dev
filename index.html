@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Codey Albers' Web Development Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link rel="stylesheet" href="portfolioStyle.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <header>
+        <nav>
+            <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About Me</li></a>
+                <li><img id="logo" src="Images/logo.png"></li>
+                <a href="#work"><li>My Work</li></a>
+                <a href="#contact"><li>Contact Me</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+
+            <h1 class="hidden">Codey Albers: Freelance Web Developer</h1>
+            
+            <div class="container" id="home">
+                <div class="landing-img-div">
+                    <img id="landing-img" src="Images/landing-grayscale.png">
+                </div>
+            </div>
+
+            <div class="container" id="about">
+                <h1 class="hidden">Codey Albers: Freelance Web Developer</h1>
+                <h2>About Me</h2>
+                <p>Hi! My name is Codey, and I'm a freelance web developer / UI designer. I specialize in writing clean, efficient code. With a client-first approach, I offer high-quality service at unbeatable rates. Client satisfaction and strong client relationships are my top priorities. I love working with small businesses to help them establish a web presence through simple, easy-to-navigate websites. Whether you're looking to expand your customer base by crossing over into the digital realm, or to simply beautify your current web presence, I'm happy to be your guy!</p>
+            </div>
+
+            <div class="container" id="work">
+                <h1 class="hidden">Codey Albers: Freelance Web Developer</h1>
+                <h2>My Work</h2>
+                <p>Here are a few projects I had fun creating:</p>
+                <div class="examples-container">
+                    <div class="spacer"></div>
+                    <div class="example" id="centsible"><a class="work-examples" href="http://centsiblespendingsolutions.org/" target="_blank"><img title="CentsibleSpendingSolutions.org" src="Images/centsible.png"></a></div>
+                    <div class="example" id="tech-doc"><a class="work-examples" href="https://codepen.io/alberscodey/full/bQoXYN" target="_blank"><img title="Sample Technical Documentation Page" src="Images/tech doc.png"></a></div>
+                    <div class="spacer"></div>
+                    <div class="spacer"></div>
+                    <div class="example" id="sample-survey"><a class="work-examples" href="https://codepen.io/alberscodey/full/eQdzXO" target="_blank"><img title="Sample Survey Form" src="Images/bees.png"></a></div>
+                    <div class="example" id="product-landing"><a class="work-examples" href="https://codepen.io/alberscodey/full/xQRMdp" target="_blank"><img title="Sample Product Landing Page" src="Images/turtles.png"></a></div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+
+            <div class="container" id="contact">
+                <h1 class="hidden">Codey Albers: Freelance Web Developer</h1>
+                <h2>Contact Me</h2>
+                <p>Send me a message to schedule a free consultation! I'll buy you a cup of coffee and we'll talk about your vision. Let's collaborate.</p>
+                
+                <!-- 
+                    Eventually I'll be running my own form and collecting my own data. Until then I'll use a script from Cognito Forms
+                    <form id="contact-form" method="post" action="">
+                        <label for="name" id="name-label">Name:</label>
+                        <input class="input-field" id="name" type="text" name="name" placeholder="ex: John Doe" required><br>
+                        <label for="email" id="email-label">Email:</label>
+                        <input class="input-field" id="email" type="email" name="email" placeholder= "example@email.com" required><br>
+                        <label for="info" id="info-label">Share with me a little bit about yourself and what services you might be looking for.</label><br>
+                        <textarea name="info" class="input-field" id="info" placeholder="How do you take your coffee?"></textarea><br>
+                        <input id="submit" type="submit" value="Submit"></input>
+                    </form>
+                -->
+                <!--Cognito Form-->
+                <div class="cognito">
+                    <script src="https://services.cognitoforms.com/s/NTAv75RZ00-nAsTBLmczYQ"></script>
+                    <script>Cognito.load("forms", {id: "1"});</script>
+                </div>
+            </div>
+
+        </main>
+    </body>
+
+    <footer>
+        <p>Copyright &copy 2018 Codey Albers</p>
+    </footer>
+
+</html>

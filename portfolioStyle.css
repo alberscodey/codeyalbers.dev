@@ -1,0 +1,377 @@
+html {
+    font-family: 'Cabin', sans-serif;
+    color: #1d1f21;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+/******** Now for the Nav Bar ********/
+
+nav {
+    background-color: #EFEFEF;
+    position: fixed;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+nav img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 46px;
+    padding: 2px;
+}
+nav a {
+    text-decoration: none;
+    color: #1d1f21;
+    margin-top: 10px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0px 1px 5px gray;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav li {
+    padding: 0px 25px;
+}
+
+/******** Okay, sweet. Here's the Body ********/
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+p {
+    display: block;
+    text-align: justify;
+    max-width: 40vw;
+    margin: auto;
+}
+
+/******** The .hidden class for that primitive SEO - it'll do for now ********/
+
+.hidden {
+    display: none;
+}
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 50px;
+    top: 0px;
+    margin-left: -7px;
+}
+#home {
+    background-color: #EFEFEF;
+}
+#landing-img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+#about p {
+    margin-bottom: 6em;
+}
+#work {
+    background-color: #173e7c;
+    color: #EFEFEF;
+    padding-bottom: 6em;
+}
+#work h2 {
+    margin-bottom: 1.2em;
+}
+#work p {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+.examples-container {
+    padding-top: 1.8em;
+    display: grid;
+    grid-row-gap: 3em;
+    grid-column-gap: 4em;
+    grid-template-columns: 15vw 25vw 25vw 15vw;
+    justify-content: center;
+}
+.examples-container img {
+    width: 100%;
+    height: auto;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+.examples-container img:hover {
+    border: 2px solid #ed8f47;
+    border-radius: 4px;
+    box-shadow: 0px 8px 40px #1d1f21;
+}
+
+/******** Contact Form ********/
+
+.cognito {
+    padding-top: 3em;
+    padding-bottom: 6em;
+    font-family: 'Cabin', sans-serif;
+}
+.c-required {
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    padding-bottom: 1.2em;
+    -webkit-transition-duration: 0.25s; 
+    transition-duration: 0.25s;
+}
+.c-required:hover {
+    border: 2px solid #173e7c;
+    box-shadow: 0px 5px 10px gray;
+}
+#c-submit-button {
+    margin-top: 1.2em;
+    -webkit-transition-duration: 0.25s; 
+    transition-duration: 0.25s;
+}
+#c-submit-button:hover {
+    border: 2px solid #173e7c;
+    border-radius: 4px;
+    background-color: white;
+    color: #173e7c;
+    box-shadow: 0 8px 16px gray;
+}
+
+/* This is the form that will be live once I learn more server-side stuff. Right now I can't collect any data from forms so I'm using Cognito Forms to take care of that.
+
+form {
+    text-align: center;
+    margin-top: 3em;
+}
+.input-field {
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 1.2em;
+    -webkit-transition-duration: 0.25s; 
+    transition-duration: 0.25s;
+}
+.input-field:hover {
+    border: 2px solid #173e7c;
+    box-shadow: 0px 5px 10px gray;
+}
+textarea {
+    width: 45vw;
+    height: 3em;
+    margin-top: 1.2em;
+}
+#info {
+    text-align: justify;
+}
+#submit {
+    cursor: pointer;
+    border: 2px solid #173e7c;;
+    color: #EFEFEF;
+    background-color: #173e7c;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin-top: 1.2em;
+    margin-bottom: 6em;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+#submit:hover {
+    border: 2px solid #173e7c;
+    border-radius: 4px;
+    background-color: #EFEFEF;
+    color: #173e7c;
+    box-shadow: 0 8px 16px gray;
+} ********/
+
+footer{
+    margin-top: 6em;
+    text-align: center;
+}
+
+/********** Now for the media queries. These will need to be cleaned up later. **********/
+
+@media (max-width: 1200px) {
+    p {
+        max-width: 45vw;
+    }
+    textarea {
+        width: 45vw;
+    }
+}
+@media (max-width: 1100px) {
+    p {
+        max-width: 50vw;
+    }
+    textarea {
+        width: 50vw;
+    }
+}
+@media (max-width: 1000px) {
+    nav li {
+        font-size: 1em;
+    }
+    p {
+        max-width: 55vw;
+    }
+    textarea {
+        width: 55vw;
+    }
+    .examples-container {
+        grid-row-gap: 2em;
+        grid-column-gap: 3em;
+        grid-template-columns: 10vw 30vw 30vw 10vw;
+    }
+}
+@media (max-width: 900px) {
+    nav li {
+        font-size: 0.95em;
+    }
+    p {
+        max-width: 60vw;
+    }
+    textarea {
+        width: 60vw;
+    }
+    .examples-container {
+        grid-row-gap: 1.5em;
+        grid-column-gap: 2.5em;
+        grid-template-columns: 5vw 35vw 35vw 5vw;
+    }
+}
+@media (max-width: 800px) {
+    nav li {
+        font-size: 0.9em;
+    }
+    p {
+        max-width: 65vw;
+    }
+    textarea {
+        width: 65vw;
+    }
+    .examples-container {
+        grid-row-gap: 1em;
+        grid-column-gap: 2em;
+        grid-template-columns: 0vw 40vw 40vw 0vw;
+    }
+}
+@media (max-width: 700px) {
+    nav li {
+        font-size: 0.85em;
+    }
+    p {
+        max-width: 70vw;
+    }
+    textarea {
+        width: 70vw;
+    }
+    nav li {
+        padding: 0px 20px;
+    }
+}
+@media (max-width: 600px) {
+    nav li {
+        padding: 0px 15px;
+    }
+    p {
+        max-width: 75vw;
+    }
+    textarea {
+        width: 75vw;
+    }
+    #home {
+        height: 90vh;
+        margin-bottom: 9em;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 1.1em;
+    }
+    nav img {
+        margin-top: -15px;
+    }
+    nav ul {
+        position: fixed;
+        left: -5px;
+    }
+    nav li {
+        padding: 0px 12px;
+        font-size: 0.8em;
+    }
+    nav a {
+        margin-top: -5px;
+    }
+    p {
+        max-width: 80vw;
+    }
+    textarea {
+        width: 80vw;
+    }
+    #home {
+        margin-bottom: 3em;
+        height: 80vh;
+    }
+    .examples-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .example {
+        display: flex;
+        max-width: 90vw;
+        padding: 2em;
+    }
+}
+@media (max-width: 450px) {
+    nav li {
+        padding: 0px 8px;
+    }
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 1em;
+    }
+    nav ul {
+        position: fixed;
+        left: -25px;
+    }
+    nav li {
+        padding: 0px 6px;
+        font-size: 0.75em;
+    }
+    nav a {
+        margin-top: 0px;
+    }
+    p {
+        max-width: 85vw;
+    }
+    textarea {
+        width: 85vw;
+    }
+    #home {
+        margin-bottom: 0em;
+    }
+    #info-label {
+        display: block;
+        text-align: justify;
+        margin: auto;
+        padding: 1em 2em 1em 1.5em;
+    }
+}
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}

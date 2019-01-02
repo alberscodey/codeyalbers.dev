@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "main": "portfolioStyle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Codey Albers",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
